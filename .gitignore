@@ -4,3 +4,4 @@ backend-config.txt
 env.tfvars
 terraform.tfstate.backup
 terraform.tfstate
+errored.tfstate

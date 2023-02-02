@@ -2,6 +2,12 @@ provider "azurerm" {
   features {}
 }
 
+module "RemoteState" {
+  source = "./modules/remote_state"
+  resource_group_name = var.tfstate-rgName
+  location=var.location
+}
+
 module "SonarServer" {
   source   = "./modules/sonarserver"
   location = var.location

@@ -47,3 +47,10 @@ resource "azurerm_container_group" "example" {
     }
   }
 }
+
+resource "time_sleep" "wait_90_seconds" {
+    depends_on = [
+        azurerm_container_group.example
+    ]
+    create_duration = "90s"
+}

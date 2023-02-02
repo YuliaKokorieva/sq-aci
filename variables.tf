@@ -15,3 +15,8 @@ variable "sq_admin_login" {
 variable "sq_admin_login_password" {
   default = "admin"
 }
+
+variable "tfstate-rgName" {
+  description = "tfstate RG name"
+  default     = "tfstate-rg"
+}
